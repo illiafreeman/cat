@@ -167,10 +167,11 @@ body{
     width: 1176px;
 }
 .header{
-    height: 100px;
+    height: 91px;
     background: #709D5C;
     position: relative;
     margin-bottom: 120px;
+    z-index: 10;
     &:after{
         @extend %after;
         background-image: url(../img/bg_green_bottom.png);
@@ -184,7 +185,7 @@ body{
 }
 .header-menu {
     @extend %flex;
-    padding-top: 50px;
+    padding: 35px 0 8px;
     &__btn {
         display: none;
     }
@@ -198,20 +199,71 @@ body{
         line-height: 23px;
         color: #fff;
         margin-right: 85px;
+        position: relative;
         &:last-child{
             margin: 0;
+        }
+        &:before {
+            content: "";
+            width: 0;
+            height: 1px;
+            position: absolute;
+            bottom: -3px;
+            right: 0;
+            background: #fff;
+            transition: $transition;
+        }
+        &:hover{
+            &:before {
+                width: 100%;
+                left: 0;
+            }
         }
     }
 }
 .header-contact {
-
+    @extend %flex;
     &__tel {
+        font-family: $fonth;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+        color: #fff;
+        margin-right: 38px;
+        &:before {
+            content: "";
+            width: 0;
+            height: 1px;
+            position: absolute;
+            bottom: -3px;
+            right: 0;
+            background: #fff;
+            transition: $transition;
+        }
+        &:hover{
+            &:before {
+                width: 100%;
+                left: 0;
+            }
+        }
     }
 
     &__soc {
+        margin-right: 18px;
+        transition: $transition;
+        display: block;
+        width: 48px;
+        height: 48px;
+        &:hover{
+            transform: scale(1.1);
+        }
+        &:last-child{
+            margin: 0;
+        }
         svg{
             width: 48px;
             height: 48px;
+            fill: #fff
         }
     }
 }

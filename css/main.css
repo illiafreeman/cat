@@ -6,7 +6,7 @@
   font-family: "font4";
   src: url("../fonts/NovitoNova-Regular.otf") format("opentype");
 }
-.header-menu {
+.header-contact, .header-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,7 +96,7 @@ h6 {
 input,
 select,
 textarea {
-  font-family: "Helvetica";
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
@@ -185,10 +185,11 @@ body {
 }
 
 .header {
-  height: 100px;
+  height: 91px;
   background: #709D5C;
   position: relative;
   margin-bottom: 120px;
+  z-index: 10;
 }
 .header:after {
   background-image: url(../img/bg_green_bottom.png);
@@ -201,27 +202,78 @@ body {
 }
 
 .header-menu {
-  padding-top: 50px;
+  padding: 35px 0 8px;
 }
 .header-menu__btn {
   display: none;
 }
 
 .header-nav__link {
-  font-family: "Helvetica";
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 23px;
   color: #fff;
   margin-right: 85px;
+  position: relative;
 }
 .header-nav__link:last-child {
   margin: 0;
 }
+.header-nav__link:before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.header-nav__link:hover:before {
+  width: 100%;
+  left: 0;
+}
 
+.header-contact__tel {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: #fff;
+  margin-right: 38px;
+}
+.header-contact__tel:before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.header-contact__tel:hover:before {
+  width: 100%;
+  left: 0;
+}
+.header-contact__soc {
+  margin-right: 18px;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+.header-contact__soc:hover {
+  transform: scale(1.1);
+}
+.header-contact__soc:last-child {
+  margin: 0;
+}
 .header-contact__soc svg {
   width: 48px;
   height: 48px;
+  fill: #fff;
 }
 
 @media only screen and (max-width: 1200px) {
