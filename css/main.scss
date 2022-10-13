@@ -1,10 +1,6 @@
 @font-face {
-    font-family: 'font3';
+    font-family: 'font';
     src: url('../fonts/NovitoNova-Thin.otf') format('opentype');
-}
-@font-face {
-    font-family: 'font4';
-    src: url('../fonts/NovitoNova-Regular.otf') format('opentype');
 }
 
 @import '_var';
@@ -28,51 +24,10 @@ label:focus{
     -moz-outline-style: none !important;
     text-decoration: none !important;
 }
-h1, .h1{
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
 
-    margin: 0 0 40px;
-}
-h2{
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
-    margin: 0 0 30px;
-}
-h3{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    text-transform: uppercase;
-    margin: 0 0 26px;
-}
-h4{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 0 0 26px;
-}
-h5{
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 20px;
-    text-transform: uppercase;
-    margin: 0 0 26px;
-}
-h6{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
-    text-transform: uppercase;
-    margin: 0 0 26px;
-}
 
 h1, h2, h3, h4, h5, h6{
-    
+    margin: 0;
 }
 
 input,
@@ -150,7 +105,7 @@ body{
     min-height: 100vh;
     overflow-x: hidden;
     color: $black;
-    font-family: $font3;
+    font-family: $font;
     font-size: 16px;
     line-height: 24px;
     box-sizing: border-box;
@@ -267,9 +222,35 @@ body{
         }
     }
 }
+.article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 0;
+    &_df{
+        display: flex;
+        justify-content: space-between;
+    }
 
-
-
+    &__text {
+        width: 620px;
+    }
+    &__pic{
+        width: 480px;
+    }
+}
+.subtext{
+    @extend %fonth;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+}
+h1, h2{
+    font-weight: 300;
+    font-size: 160px;
+    line-height: 192px;
+    margin-bottom: 16px;
+}
 
 
 
