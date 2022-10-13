@@ -15,39 +15,28 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@600;700&family=Roboto&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 
     <link href="css/main.css" rel="stylesheet"/>
 </head>
 <body class="">
-<header class="header clearfix">
-    <div class="header__container">
-        <a href="index.html" class="header-logo"></a>
-        <div class="header-group">
-            <nav class="header-nav ">
-                <ul class="header-nav__list">
-                    <li class="header-nav__item"><a class="header-nav__link" href="about.html">about</a></li>
-                    <li class="header-nav__item"><a class="header-nav__link" href="services.html">services</a></li>
-                    <li class="header-nav__item header-nav__item_subnav">
-                        <a class="header-nav__link header-nav__link_subnav" href="javascript:void(0);">products</a>
-                        <ul class="header-subnav">
-                            <li class="header-subnav__item"><a class="header-subnav__link" href="products.html">Compound X</a></li>
-                            <li class="header-subnav__item"><a class="header-subnav__link" href="products.html">polymorph
-                                modifications</a></li>
-                            <li class="header-subnav__item"><a class="header-subnav__link" href="products.html">Smart Polymorph
-                                Technologies</a></li>
-                            <li class="header-subnav__item"><a class="header-subnav__link" href="products.html">co-crystals</a></li>
-                        </ul>
-                    </li>
-                    <li class="header-nav__item"><a class="header-nav__link" href="publications.html">publications</a></li>
-                    <li class="header-nav__item header-nav__item_contacts">
-                        <a class="header-nav__link header-nav__link_contacts" href="contacts.html">Contacts</a>
-                    </li>
-                </ul>
+<header class="header">
+    <div class="container">
+        <div class="header-menu">
+            <nav class="header-nav">
+                <a class="header-nav__link" href="">Рекомендации</a>
+                <a class="header-nav__link" href="">Портфолио</a>
+                <a class="header-nav__link" href="">Контакты</a>
             </nav>
-            <a href="#" class="header-lang">ru</a>
-            <div class="menu-btn"></div>
+            <nav class="header-contact">
+                <a class="header-contact__tel" href="callto:+79853889529">+7 (985) 388 95 29</a>
+                <a class="header-contact__soc" href="">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-te"></use>
+                    </svg>
+                </a>
+                <a class="header-contact__soc" href=""></a>
+            </nav>
+            <div class="header-menu__btn"></div>
         </div>
     </div>
 </header>
@@ -62,151 +51,9 @@
                 </div>
                 <a href="#" class="button">Learn more</a>
             </div>
-            <div class="anim">
-                <img src="img/index_main.png" alt="">
-                <canvas class="anim__canvas"></canvas>
-            </div>
-        </article>
-        <article class="article">
-            <h2 class="h1">Technology </h2>
-            <div class="wrap">
-                <div class="card w50">
-                    <img class="card__img" src="img/icon_1.svg" alt="">
-                    <div class="card__text">Patentability development of polymorph modifications of well-known successful
-                        drugs to improve their properties, as well as to extend or renew patent protection
-                    </div>
-                </div>
-                <div class="card w50">
-                    <img class="card__img" src="img/icon_2.svg" alt="">
-                    <div class="card__text">
-                        Development of polymorph modifications of new compounds that did not show the expected results in
-                        clinical studies to improve pharmacological properties and possible repositioning
-                    </div>
-                </div>
-            </div>
-            <img style="margin-bottom: 20px;" src="img/index_draph.jpg" alt="">
-            <h3>STABILITY</h3>
-            <p class="propertext mb55">
-                Metastable crystalline and amorphous forms of the substance are physically stable for more than 3 years and have an ultra-high dissolution rate, thus increasing bioavailability
 
-            </p>
-            <h3>Properties</h3>
-            <div class="wrap">
-                <div class="card w50">
-                    <img class="card__img" src="img/icon_3.svg" alt="">
-                    <div class="card__text">
-                        Our modifications have crystal and conformational polymorphism, at the expense of what:
-                    </div>
-                    <ul class="ul mt35">
-                        <li>increased therapeuti chave crystal and conformational polymorphism</li>
-                        <li>reduced toxicity and / or side effects </li>
-                        <li>increased dissolution rate and solubility</li>
-                        <li>retention of solute properties for several years</li>
-                        <li>possibility of creating new dosage forms</li>
-                    </ul>
-                </div>
-                <div class="w50">
-                    <img class="prop__img" src="img/icon_team.svg" alt="">
-                    <div class="card">
-                        <img class="card__img" src="img/icon_4.svg" alt="">
-                        <div class="card__text">
-                            The technology allows you to co-crystallize several pharmaceutical substances at once or select compounds for co-crystallization
-                        </div>
-                    </div>
-                </div>
-            </div>
         </article>
-        <article class="article last">
-            <h2 class="products-header h1">
-                Products
-                <img src="img/index_products.svg" alt="">
-            </h2>
-            <div class="wrap center">
-                <div class="product">
-                    <div class="product__pic">
-                        <img src="img/prod_1.jpg" alt="">
-                    </div>
-                    <div class="product__desc">
-                        <div class="product__name">
-                            Compound XINN
-                        </div>
-                        <div class="product__text">
-                            tetracaine (β-form)
-                            local anesthetic
-                        </div>
-                        <a href="#" class="button button_product">
-                            Learn more
-                        </a>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product__pic">
-                        <img src="img/photo_4.jpg" alt="">
-                    </div>
-                    <div class="product__desc">
-                        <div class="product__name">
-                            Compound Y
-                        </div>
-                        <div class="product__text">
-                            methyluracil (β-form)
-                            accelerating wound healing, cellular metabolism, anti-inflammatory
-                        </div>
-                        <a href="#" class="button button_product">
-                            Learn more
-                        </a>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product__pic">
-                        <img src="img/prod_3.jpg" alt="">
-                    </div>
-                    <div class="product__desc">
-                        <div class="product__name">
-                            Compound Z
-                        </div>
-                        <div class="product__text">
-                            rivaroxaban anticoagulant
-                        </div>
-                        <a href="#" class="button button_product">
-                            Learn more
-                        </a>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product__pic">
-                    </div>
-                    <div class="product__desc">
-                        <div class="product__name">
-                            Compound XINN
-                        </div>
-                        <div class="product__text">
-                            tetracaine (β-form)
-                            local anesthetic
-                        </div>
-                        <a href="#" class="button button_product">
-                            Learn more
-                        </a>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product__pic">
-                    </div>
-                    <div class="product__desc">
-                        <div class="product__name">
-                            Compound XINN
-                        </div>
-                        <div class="product__text">
-                            tetracaine (β-form)
-                            local anesthetic tetracaine (β-form)
-                            local anesthetic
-                        </div>
-                        <a href="#" class="button button_product">
-                            Learn more
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </article>
+
     </div>
 </main>
 <footer class="footer">
