@@ -227,11 +227,48 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 120px 0;
+    margin-bottom: 120px;
     &_df{
         display: flex;
         justify-content: space-between;
     }
-
+    &_mark{
+        background: #EDE7DD;
+        padding: 68px 0;
+        position: relative;
+        &:after, &:before{
+            @extend %after;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 120px;
+        }
+        &:after{
+            background-image: url(../img/bg_brown_bottom.png);
+            background-position: center bottom;
+            top: 100%;
+        }
+        &:before{
+            background-image: url(../img/bg_brown_top.png);
+            background-position: center top;
+            bottom: 100%;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 900px;
+            h2{
+                font-size: 84px;
+                line-height: 84px;
+                margin: 0;
+                span{
+                    color: #709D5C;
+                }
+            }
+        }
+    }
     &__text {
         width: 620px;
     }
