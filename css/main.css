@@ -2,7 +2,7 @@
   font-family: "font";
   src: url("../fonts/NovitoNova-Thin.otf") format("opentype");
 }
-.subtext {
+.subtext, .chat__message-item {
   font-family: "Montserrat", sans-serif;
   letter-spacing: -1px;
 }
@@ -294,7 +294,7 @@ body {
 .article_chat {
   width: 100%;
   display: block;
-  padding: 110px 153px 0 448px;
+  padding: 110px 44px 0 448px;
   margin: 260px 0;
 }
 .article_chat-1 {
@@ -303,6 +303,39 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.chat {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.chat__message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.chat__message-item {
+  background: #F7F7F7;
+  border-radius: 8px;
+  border-top-right-radius: 0;
+  padding: 16px;
+  max-width: 260px;
+}
+.chat_reverse {
+  justify-content: flex-start;
+}
+.chat_reverse .chat__ava {
+  order: 1;
+}
+.chat_reverse .chat__message {
+  order: 2;
+}
+.chat_reverse .chat__message-item {
+  background: #ECF4E8;
+  border-top-left-radius: 0;
 }
 
 .subtext {
