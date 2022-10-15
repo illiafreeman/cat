@@ -7,7 +7,9 @@
 @import '_help';
 
 
-
+*{
+    box-sizing: border-box;
+}
 
 a:active,
 a:focus,
@@ -274,6 +276,19 @@ body{
     }
     &__pic{
         width: 480px;
+    }
+    &_chat{
+        width: 100%;
+        display: block;
+        padding: 110px 153px 0 448px; 
+        margin: 260px 0;
+        &-1{
+            height: 709px;
+            background-image: url(../img/chat_1.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
     }
 }
 .subtext{
