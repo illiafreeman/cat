@@ -30,6 +30,7 @@ label:focus{
 
 h1, h2, h3, h4, h5, h6{
     margin: 0;
+    font-weight: 300;
 }
 
 input,
@@ -296,6 +297,9 @@ body{
     justify-content: flex-end;
     gap: 20px;
     margin-bottom: 60px;
+    &:last-child{
+        margin-bottom: 0;
+    }
     &__message {
         display: flex;
         flex-direction: column;
@@ -310,6 +314,9 @@ body{
         border-top-right-radius: 0;
         padding: 16px;
         max-width: 260px;
+        font-size: 20px;
+        line-height: 25px;  
+        font-weight: 300;
     }
 
     &__ava {
@@ -334,11 +341,14 @@ body{
     font-size: 34px;
     line-height: 39px;
 }
-h1, h2{
-    font-weight: 300;
+h1{
     font-size: 160px;
     line-height: 192px;
     margin-bottom: 16px;
+}
+h2{
+    font-size: 160px;
+    line-height: 160px;
 }
 
 

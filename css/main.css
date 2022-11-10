@@ -53,6 +53,7 @@ label:focus {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  font-weight: 300;
 }
 
 input,
@@ -311,6 +312,9 @@ body {
   gap: 20px;
   margin-bottom: 60px;
 }
+.chat:last-child {
+  margin-bottom: 0;
+}
 .chat__message {
   display: flex;
   flex-direction: column;
@@ -323,6 +327,9 @@ body {
   border-top-right-radius: 0;
   padding: 16px;
   max-width: 260px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 300;
 }
 .chat_reverse {
   justify-content: flex-start;
@@ -344,11 +351,15 @@ body {
   line-height: 39px;
 }
 
-h1, h2 {
-  font-weight: 300;
+h1 {
   font-size: 160px;
   line-height: 192px;
   margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 160px;
+  line-height: 160px;
 }
 
 @media only screen and (max-width: 1200px) {
