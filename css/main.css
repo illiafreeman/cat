@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.vote {
+.comment__item span, .vote {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -393,6 +393,46 @@ h2 {
 }
 .vote__like_dis div {
   width: 300px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  padding: 74px;
+  background: #FAF8F6;
+  border-radius: 40px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  gap: 16px;
+}
+.comment__title {
+  font-size: 32px;
+  line-height: 37px;
+  margin-bottom: 24px;
+}
+.comment__item {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  font-size: 28px;
+  line-height: 32px;
+}
+.comment__item span {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  font-size: 38px;
+  line-height: 44px;
+  color: #fff;
+}
+.comment__item:nth-child(2) span {
+  background: #88B475;
+}
+.comment__item:nth-child(3) span {
+  background: #EDE7DD;
+}
+.comment__item:nth-child(4) span {
+  background: #DA5C42;
 }
 
 @media only screen and (max-width: 1200px) {

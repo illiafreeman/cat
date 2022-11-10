@@ -379,6 +379,53 @@ h2{
         }
     }
 }
+.comment {
+    display: flex;
+    flex-direction: column;
+    padding: 74px;
+    background: #FAF8F6;
+    border-radius: 40px;
+    width: 100%;
+    font-family: $fonth;
+    gap: 16px;
+    &__title{
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 24px;    
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+        font-size: 28px;
+        line-height: 32px;
+        span{
+            width: 76px;
+            height: 76px;
+            @extend %flex-c;
+            border-radius: 50%;
+            font-size: 38px;
+            line-height: 44px;
+            color: #fff;
+            
+        }
+        &:nth-child(2){
+            span{
+                background: #88B475;
+            }
+        }
+        &:nth-child(3){
+            span{
+                background: #EDE7DD;
+            }
+        }
+        &:nth-child(4){
+            span{
+                background: #DA5C42;
+            }
+        }
+    }
+}
 
 
 
