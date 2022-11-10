@@ -283,6 +283,23 @@ body{
             }
         }
     }
+    &_green{
+        background: #709D5C;
+        .container{
+            display: block;
+            width: 1176px;
+        }
+        &:after{
+            background-image: url(../img/bg_green_bottom.png);
+            background-position: center bottom;
+            top: 100%;
+        }
+        &:before{
+            background-image: url(../img/bg_green_top.png);
+            background-position: center top;
+            bottom: 100%;
+        }
+    }
     &__text {
         width: 620px;
     }
@@ -424,6 +441,40 @@ h2{
                 background: #DA5C42;
             }
         }
+    }
+}
+.note {
+    @extend %flex;
+    align-items: flex-start;
+    gap: 132px;
+    &__pic {
+        width: 68px;
+        min-width: 68px;
+        
+    }
+
+    &__text {
+        font-family: $fonth;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    &__quote {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 77px;
+    }
+
+    &__name {
+        font-family: $font;
+        font-size: 72px;
+        line-height: 58px;
+        margin-bottom: 26px;
+    }
+
+    &__sub {
+        font-size: 30px;
+        line-height: 36px;
     }
 }
 
