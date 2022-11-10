@@ -9,30 +9,6 @@ $(document).ready(function() {
 
     /*end top menu toggle*/
 
-    $('.header-nav__item_subnav').click(function(){
-        $(this).toggleClass('open');
-    });
-
-    $(".header-lang").click(function () {
-        $(this).text(function(i, text){
-            return text === "ru" ? "en" : "ru";
-        })
-    });
-
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
     /*scroll to top*/
     var scrollTop = $(".scroll-top");
     $(window).scroll(function() {
@@ -50,6 +26,18 @@ $(document).ready(function() {
         return false;
     });
     /*end scroll to top*/
+
+    $('.vote__like div').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
 });
 
 

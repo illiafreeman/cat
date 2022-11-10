@@ -391,6 +391,9 @@ h2 {
   font-size: 120px;
   line-height: 120px;
 }
+.vote__like_dis div {
+  width: 300px;
+}
 
 @media only screen and (max-width: 1200px) {
   .header__container, .container, .footer__container {
