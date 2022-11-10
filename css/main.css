@@ -13,6 +13,12 @@
   align-items: center;
 }
 
+.vote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .article_mark:after, .article_mark:before, .header:after {
   content: "";
   display: block;
@@ -250,6 +256,17 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.article_ready {
+  flex-direction: column;
+}
+.article_ready-col {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 160px;
+}
+.article_ready-pic {
+  margin-bottom: 80px;
+}
 .article_mark {
   background: #EDE7DD;
   padding: 68px 0;
@@ -360,6 +377,19 @@ h1 {
 h2 {
   font-size: 160px;
   line-height: 160px;
+}
+
+.vote {
+  gap: 72px;
+  margin-bottom: 80px;
+}
+.vote__like {
+  display: flex;
+  gap: 40px;
+}
+.vote__like div {
+  font-size: 120px;
+  line-height: 120px;
 }
 
 @media only screen and (max-width: 1200px) {

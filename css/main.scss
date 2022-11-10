@@ -235,6 +235,17 @@ body{
         display: flex;
         justify-content: space-between;
     }
+    &_ready{
+        flex-direction: column;
+        &-col{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 160px;
+        }
+        &-pic{
+            margin-bottom: 80px;
+        }
+    }
     &_mark{
         background: #EDE7DD;
         padding: 68px 0;
@@ -349,6 +360,19 @@ h1{
 h2{
     font-size: 160px;
     line-height: 160px;
+}
+.vote {
+    @extend %flex-c;
+    gap: 72px;
+    margin-bottom: 80px;
+    &__like {
+        display: flex;
+        gap: 40px;
+        div{
+            font-size: 120px;
+            line-height: 120px;
+        }
+    }
 }
 
 
