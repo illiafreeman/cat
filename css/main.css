@@ -7,13 +7,13 @@
   letter-spacing: -1px;
 }
 
-.note, .header-contact, .header-menu {
+.result, .note, .header-contact, .header-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.btn, .comment__item span, .vote {
+.soc, .btn, .comment__item span, .vote {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,6 +251,11 @@ body {
   align-items: center;
   padding: 120px 0;
   margin-bottom: 120px;
+}
+.article_total {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 132px;
 }
 .article_board .article__text {
   width: auto;
@@ -571,6 +576,43 @@ h2 {
 }
 .board__board {
   padding-bottom: 200px;
+}
+
+.total .article_ready-col {
+  gap: 40px;
+  margin-bottom: 0;
+}
+.total .article__text {
+  width: auto;
+  text-align: right;
+}
+.total .article__text h2 span {
+  display: block;
+}
+.total .article__text p {
+  width: auto;
+}
+
+.result__desc {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.result__desc p {
+  margin: 0 0 77px;
+  width: auto;
+}
+.soc {
+  width: 138px;
+  height: 138px;
+  transition: all 0.2s ease-in-out;
+}
+.soc svg {
+  transition: all 0.2s ease-in-out;
+}
+.soc:hover svg {
+  fill: #709D5C;
 }
 
 @media only screen and (max-width: 1200px) {

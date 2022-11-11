@@ -231,6 +231,11 @@ body{
     align-items: center;
     padding: 120px 0;
     margin-bottom: 120px;
+    &_total{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 132px;
+    }
     &_board{
         .article__text{
             width: auto;
@@ -574,6 +579,62 @@ h2{
     }
     &__board {
         padding-bottom: 200px;
+    }
+}
+.total {
+    .article {
+
+		&_ready-col {
+            gap: 40px;
+            margin-bottom: 0;
+		}
+
+		&__pic {
+		}
+
+		&__text {
+            width: auto;
+            text-align: right;
+            h2{
+                span{
+                    display: block;
+                }
+            }
+            p{
+                width: auto;
+            }
+		}
+}
+}
+
+.result {
+    @extend %flex;
+		&__desc {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            p{
+                margin: 0 0 77px;
+                width: auto;
+            }
+		}
+
+		&__pic {
+		}
+}
+.soc {
+    @extend %flex-c;
+    width: 138px;
+    height: 138px;
+    transition: $transition;
+    svg{
+        transition: $transition;
+    }
+    &:hover{
+        svg{
+            fill: #709D5C;
+        }
     }
 }
 
