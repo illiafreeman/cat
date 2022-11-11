@@ -517,7 +517,22 @@ h2{
         right: 0;
     }
 }
-
+.btn{
+    @extend %flex-c;
+    display: inline-flex;
+    height: 100px;
+    padding: 0 150px;
+    background: #FFFFFF;
+    border-radius: 60px;
+    font-family: $font;
+    font-size: 60px;
+    color: #709D5C;
+    transition: $transition;
+    &:hover{
+        background: #DA5C42;
+        color: #fff;
+    }
+}
 
 
 
