@@ -29,27 +29,27 @@ $(document).ready(function() {
 
 
 
-    // function scrollEvent() {
-    //     var hT = $('.vote').offset().top,
-    //       hH = $('.vote').outerHeight(),
-    //       wH = $(window).height(),
-    //       wS = $(this).scrollTop();
-    //     if (wS > (hT+hH-wH)){
-    //         $('.vote__like div').each(function () {
-    //             $(this).prop('Counter',0).animate({
-    //                 Counter: $(this).text()
-    //             }, {
-    //                 duration: 2000,
-    //                 easing: 'swing',
-    //                 step: function (now) {
-    //                     $(this).text(Math.ceil(now));
-    //                 }
-    //             });
-    //         });
-    //       window.removeEventListener("scroll", scrollEvent);
-    //     }
-    // }
-    // window.addEventListener("scroll", scrollEvent);
+     function scrollEvent() {
+         var hT = $('.vote').offset().top,
+           hH = $('.vote').outerHeight(),
+           wH = $(window).height(),
+           wS = $(this).scrollTop();
+         if (wS > (hT+hH-wH)){
+             $('.vote__like div').each(function () {
+                 $(this).prop('Counter',0).animate({
+                     Counter: $(this).text()
+                 }, {
+                     duration: 2000,
+                     easing: 'swing',
+                     step: function (now) {
+                         $(this).text(Math.ceil(now));
+                     }
+                 });
+             });
+           window.removeEventListener("scroll", scrollEvent);
+         }
+     }
+     window.addEventListener("scroll", scrollEvent);
 
     $('#slick_1').slick({
         slidesToShow: 1,
