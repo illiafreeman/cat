@@ -2,7 +2,7 @@
   font-family: "font";
   src: url("../fonts/NovitoNova-Thin.otf") format("opentype");
 }
-.subtext, .chat__message-item {
+.subtext, .chat__message-item, .chat_cancel {
   font-family: "Montserrat", sans-serif;
   letter-spacing: -1px;
 }
@@ -343,20 +343,29 @@ body {
   display: block;
   padding: 110px 44px 0 448px;
   margin: 260px 0;
-}
-.article_chat-1 {
-  height: 709px;
-  background-image: url(../img/chat_1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+  height: 709px;
+}
+.article_chat-1 {
+  background-image: url(../img/chat_1.jpg);
+}
+.article_chat-2 {
+  background-image: url(../img/chat_2.jpg);
 }
 
 .chat {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+}
+.chat_cancel {
+  justify-content: center;
+  color: #709D5C;
+  font-size: 20px;
+  line-height: 25px;
 }
 .chat:last-child {
   margin-bottom: 0;
@@ -372,7 +381,7 @@ body {
   border-radius: 8px;
   border-top-right-radius: 0;
   padding: 16px;
-  max-width: 260px;
+  max-width: 350px;
   font-size: 20px;
   line-height: 25px;
   font-weight: 300;

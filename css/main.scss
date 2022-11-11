@@ -329,12 +329,15 @@ body{
         display: block;
         padding: 110px 44px 0 448px; 
         margin: 260px 0;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 709px;
         &-1{
-            height: 709px;
             background-image: url(../img/chat_1.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: contain;
+        }
+        &-2{
+            background-image: url(../img/chat_2.jpg);
         }
     }
 }
@@ -342,7 +345,14 @@ body{
     display: flex;
     justify-content: flex-end;
     gap: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    &_cancel{
+        justify-content: center;
+        color: #709D5C;
+        @extend %fonth;
+        font-size: 20px;
+        line-height: 25px;
+    }
     &:last-child{
         margin-bottom: 0;
     }
@@ -359,7 +369,7 @@ body{
         border-radius: 8px;
         border-top-right-radius: 0;
         padding: 16px;
-        max-width: 260px;
+        max-width: 350px;
         font-size: 20px;
         line-height: 25px;  
         font-weight: 300;
