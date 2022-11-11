@@ -54,12 +54,14 @@ $(document).ready(function() {
     $('#slick_1').slick({
         slidesToShow: 1,
         fade: true,
-        autoplay: true
+        autoplay: true,
+        asNavFor: '#slick_2'
     });
     $('#slick_2').slick({
         slidesToShow: 1,
         fade: true,
-        autoplay: true
+        autoplay: true,
+        asNavFor: '#slick_1'
     });
 
 
