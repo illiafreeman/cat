@@ -263,6 +263,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 160px;
+  align-items: center;
 }
 .article_ready-pic {
   margin-bottom: 80px;
@@ -354,12 +355,16 @@ body {
 .article_chat-2 {
   background-image: url(../img/chat_2.jpg);
 }
+.article_chat-3 {
+  background-image: url(../img/chat_3.jpg);
+  margin-bottom: 160px;
+}
 
 .chat {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .chat_cancel {
   justify-content: center;
