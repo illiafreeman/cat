@@ -132,8 +132,15 @@ body{
             }
         }
     }
-    .container{
-        
+    &:after {
+        @extend %after;
+        background-image: url(../img/bg_green_top.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 100% 100%;
+        bottom: 100%;
+        width: 100%;
+        height: 100px;
     }
 }
 /*end fixed footer*/
@@ -475,6 +482,7 @@ h2{
 }
 .vote {
     @extend %flex-c;
+    @extend %font;
     gap: 72px;
     margin-bottom: 80px;
     &__like {
@@ -740,7 +748,9 @@ h2{
         text-align: left;
     }
 }
-
+.last{
+    margin-bottom: 0;
+}
 
 
 
