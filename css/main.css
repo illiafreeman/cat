@@ -146,9 +146,23 @@ body {
 }
 
 .footer {
-  margin: auto auto 0 auto;
+  height: 91px;
+  background: #709D5C;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-
+.footer__copy {
+  color: #fff;
+  font-weight: 300;
+}
+.footer__copy a {
+  text-decoration: underline;
+  color: #fff;
+}
+.footer__copy a:hover {
+  text-decoration: none;
+}
 /*end fixed footer*/
 .container {
   margin: 0 auto;
@@ -673,6 +687,34 @@ h2 {
 .tel:hover::before {
   width: 100%;
   left: 0;
+}
+
+.reverse {
+  width: 100%;
+  align-items: flex-start;
+}
+.reverse .article__text {
+  order: 2;
+  width: 724px;
+}
+.reverse .article__text p {
+  width: 100%;
+}
+.reverse .article__text h2 {
+  font-size: 160px;
+  line-height: 160px;
+}
+.reverse .article__pic {
+  order: 1;
+}
+
+.article_brain.article_mark::after {
+  display: none;
+}
+.article_brain.article_mark .container {
+  width: 1176px;
+  justify-content: space-between;
+  text-align: left;
 }
 
 @media only screen and (max-width: 1200px) {
