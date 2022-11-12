@@ -29,8 +29,7 @@ label:focus{
 
 
 h1, h2, h3, h4, h5, h6{
-    margin: 0;
-    font-weight: 300;
+    @extend %font;
 }
 
 input,
@@ -108,7 +107,7 @@ body{
     min-height: 100vh;
     overflow-x: hidden;
     color: $black;
-    font-family: $font;
+    @extend %fonth;
     font-size: 16px;
     line-height: 24px;
     box-sizing: border-box;
@@ -358,7 +357,7 @@ body{
         }
     }
     &__text {
-        width: 620px;
+        width: 625px;
         p{
             font-family: $fonth;
             width: 580px;
@@ -665,8 +664,36 @@ h2{
     display: flex;
     flex-direction: column;
 }
+.soc-wrap{
+    margin: 80px 0 54px;
+    display: flex;
+    gap: 48px;
 
-
+}
+.tel{
+    font-size: 34px;
+    line-height: 39px;
+    font-family: $fonth;
+    color: $black;
+    font-weight: 600;
+    &::before {
+        content: "";
+        width: 0;
+        height: 1px;
+        position: absolute;
+        bottom: -3px;
+        right: 0;
+        background: $black;
+        transition: all 0.2s ease-in-out;
+    }
+    &:hover{
+        &::before {
+            width: 100%;
+            left: 0;
+          
+        }
+    }
+}
 
 
 

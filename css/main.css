@@ -2,9 +2,17 @@
   font-family: "font";
   src: url("../fonts/NovitoNova-Thin.otf") format("opentype");
 }
-.subtext, .chat__message-item, .chat_cancel {
+.subtext, .chat__message-item, .chat_cancel, body {
   font-family: "Montserrat", sans-serif;
   letter-spacing: -1px;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "font";
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0px;
 }
 
 .result, .note, .header-contact, .header-menu {
@@ -55,11 +63,6 @@ label:focus {
   outline-style: none !important;
   -moz-outline-style: none !important;
   text-decoration: none !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-weight: 300;
 }
 
 input,
@@ -135,7 +138,6 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   color: #000;
-  font-family: "font";
   font-size: 16px;
   line-height: 24px;
   box-sizing: border-box;
@@ -374,7 +376,7 @@ body {
   top: calc(100% - 119px);
 }
 .article__text {
-  width: 620px;
+  width: 625px;
 }
 .article__text p {
   font-family: "Montserrat", sans-serif;
@@ -643,6 +645,34 @@ h2 {
   width: 530px;
   display: flex;
   flex-direction: column;
+}
+
+.soc-wrap {
+  margin: 80px 0 54px;
+  display: flex;
+  gap: 48px;
+}
+
+.tel {
+  font-size: 34px;
+  line-height: 39px;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  font-weight: 600;
+}
+.tel::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  background: #000;
+  transition: all 0.2s ease-in-out;
+}
+.tel:hover::before {
+  width: 100%;
+  left: 0;
 }
 
 @media only screen and (max-width: 1200px) {

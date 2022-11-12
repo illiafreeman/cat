@@ -11,6 +11,13 @@ $white: #fff;
 %fonth{
     font-family: $fonth;
     letter-spacing: -1px;
+    font-weight: 400;
+}
+%font{
+    font-family: $font;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 0px;
 }
 
 %flex{
