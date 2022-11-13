@@ -4,7 +4,8 @@
     .header__container, 
     .container, 
     .footer__container,
-    .article_mark .container {
+    .article_mark .container,
+    .article_brain.article_mark.last .container {
         width: 400px;
         padding-left: 20px;
         padding-right: 20px;
@@ -13,13 +14,13 @@
         width: 100%;
         margin-bottom: 50px;
     }
-    .header, .article_mark{
+    .header, .article_mark, .footer{
         &:after, &:before{
             height: 80px;
         }
         margin-bottom: 80px;
     }
-    .article, .article.article_p{
+    .article, .article.article_p, .article.last{
         padding: 70px 0;
         margin-bottom: 80px;
     }
@@ -250,14 +251,15 @@
     } 
     .article_total {
         gap: 50px;
-    }      
+    } 
+    .soc {
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+    }     
     .result{
         flex-direction: column;
-        .soc {
-            width: 90px;
-            height: 90px;
-            margin: 0 auto;
-        }
+        
         .result__pic{
             width: 180px;
         }
@@ -277,6 +279,12 @@
         position: relative;
         z-index: 100;
         background: #fff;
+        .article__pic{
+            display: none;
+        }
+        .article_ready-col, .article__text{
+            margin: 0;
+        }
     }
     .article.article_p{
         position: relative;
@@ -288,6 +296,59 @@
             top: calc(100% - 80px);
         }
     }
+    .soc-wrap {
+        margin: 50px 0 75px;
+        justify-content: center;
+        gap: 24px;
+        .soc{
+            margin: 0;  
+        }
+    }
+    .tel {
+        font-size: 22px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+    .last{
+        .article__pic{
+            display: none;
+        }
+        .article__text {
+            width: 100%;
+        }
+        .container{
+            h2{
+                font-size: 80px;
+                line-height: 80px;
+            }
+        }
+        .soc-wrap, .article_ready-col.reverse, .article__text{
+            margin-bottom: 0;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
