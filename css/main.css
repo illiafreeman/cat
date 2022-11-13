@@ -739,6 +739,10 @@ h2 {
   line-height: 160px;
 }
 
+.slick-prev, .slick-next {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .container,
 .footer__container,
