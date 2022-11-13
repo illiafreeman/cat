@@ -903,12 +903,51 @@ h2 {
     font-size: 20px;
     line-height: 23px;
     margin-bottom: 38px;
+    padding-left: 50px;
+    position: relative;
+  }
+  .note__quote:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    border: 2px solid #fff;
+    border-radius: 14px;
+    height: calc(100% - 70px);
+  }
+  .note__quote:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fff;
+    border-radius: 14px;
+  }
+  .note__quote div {
+    position: relative;
+  }
+  .note__quote div:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -65px;
+    width: 44px;
+    height: 44px;
+    border: 2px solid #fff;
+    border-radius: 44px;
   }
   .note__name {
     font-family: "font";
     font-size: 52px;
     line-height: 52px;
     margin-bottom: 16px;
+    padding-left: 30px;
   }
   .note__pic {
     display: none;
@@ -916,6 +955,7 @@ h2 {
   .note__sub {
     font-size: 16px;
     line-height: 20px;
+    padding-left: 30px;
   }
   .note__ava {
     position: static;
