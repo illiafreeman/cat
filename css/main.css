@@ -737,9 +737,48 @@ h2 {
 }
 
 @media only screen and (max-width: 1200px) {
-  .header__container, .container, .footer__container {
+  .header__container,
+.container,
+.footer__container,
+.article_mark .container {
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .article__text {
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-bottom: 44px;
+  }
+  .header {
+    margin-bottom: 80px;
+  }
+  .header:after {
+    height: 80px;
+  }
+  .article {
+    padding: 70px 0;
+  }
+  h1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .article__pic {
+    width: 300px;
+  }
+  .article_intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .subtext {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .article_mark .container h2 {
+    font-size: 52px;
+    line-height: 52px;
+  }
+  .article_mark {
+    padding: 106px 0;
   }
 }/*# sourceMappingURL=main.css.map */
