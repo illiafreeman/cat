@@ -731,6 +731,11 @@ h2 {
   margin-bottom: 0;
 }
 
+.article_mark.article_brown h2 {
+  font-size: 160px;
+  line-height: 160px;
+}
+
 @media only screen and (max-width: 1200px) {
   .header__container, .container, .footer__container {
     width: 100%;
