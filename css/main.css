@@ -942,6 +942,12 @@ h2 {
     border: 2px solid #fff;
     border-radius: 44px;
   }
+  .nobg {
+    padding: 0;
+  }
+  .nobg::before, .nobg::after {
+    display: none;
+  }
   .note__name {
     font-family: "font";
     font-size: 52px;

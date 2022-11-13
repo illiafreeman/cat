@@ -244,6 +244,12 @@
             }
         }
     }
+    .nobg{
+        padding: 0;
+        &::before, &::after{
+            display: none;
+        }
+    }
 
     .note__name {
         font-family: "font";
