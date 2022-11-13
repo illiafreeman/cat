@@ -61,14 +61,16 @@ $(document).ready(function() {
         fade: true,
         autoplay: true,
         asNavFor: '#slick_2',
-        swipe: false
+        swipe: false,
+        autoplaySpeed: 800,
     });
     $('#slick_2').slick({
         slidesToShow: 1,
         fade: true,
         autoplay: true,
         asNavFor: '#slick_1',
-        swipe: false
+        swipe: false,
+        autoplaySpeed: 800
     });
 
 
