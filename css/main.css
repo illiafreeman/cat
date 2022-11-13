@@ -457,8 +457,8 @@ body {
   border-top-right-radius: 0;
   padding: 16px;
   max-width: 350px;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 300;
 }
 .chat_reverse {
@@ -473,6 +473,7 @@ body {
 .chat_reverse .chat__message-item {
   background: #ECF4E8;
   border-top-left-radius: 0;
+  border-top-right-radius: 8px;
 }
 
 .subtext {
@@ -801,9 +802,16 @@ h2 {
   }
   .article_chat-3 {
     background-image: url(../img/chat_3_min.jpg);
+    height: 810px;
+  }
+  .article_chat-3 .chat__message-item {
+    padding: 12px 16px;
+  }
+  .article_chat-3 .chat_cancel {
+    text-align: center;
   }
   .container_chat {
-    padding: 90px 20px 0;
+    padding: 70px 20px 0;
   }
   .chat__message-item, .chat_cancel {
     font-size: 16px;
@@ -906,5 +914,26 @@ h2 {
   }
   .article_ready-colbrain {
     margin-bottom: 0 !important;
+  }
+  .article_ready-col3 {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  .article_ready-col3 h2 {
+    text-align: center;
+    width: 340px;
+    margin: 0 auto;
+  }
+  .article_ready-col3 .article__pic {
+    width: 240px;
+  }
+  .article.article_mark.article_green {
+    padding: 90px 0;
+  }
+  .btn {
+    font-size: 46px;
+    padding: 0 40px;
+    width: 100%;
+    height: 76px;
   }
 }/*# sourceMappingURL=main.css.map */

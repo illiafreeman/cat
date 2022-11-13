@@ -19,7 +19,7 @@
         }
         margin-bottom: 80px;
     }
-    .article {
+    .article{
         padding: 70px 0;
         margin-bottom: 100px;
     }
@@ -66,9 +66,16 @@
     }
     .article_chat-3 {
         background-image: url(../img/chat_3_min.jpg);
+        height: 810px;
+        .chat__message-item{
+            padding: 12px 16px;
+        }
+        .chat_cancel{
+            text-align: center;
+        }
     }
     .container_chat{
-        padding: 90px 20px 0;
+        padding: 70px 20px 0;
     }
     .chat__message-item, .chat_cancel {
         font-size: 16px;
@@ -177,9 +184,27 @@
     .article_ready-colbrain{
         margin-bottom: 0 !important;
     }
-
-
-
+    .article_ready-col3{
+        flex-direction: column;
+        margin-top: 70px;
+        h2{
+            text-align: center;
+            width: 340px;
+            margin: 0 auto;
+        }
+        .article__pic{
+            width: 240px;
+        }
+    }
+    .article.article_mark.article_green{
+        padding: 90px 0;
+    }
+    .btn {
+        font-size: 46px;
+        padding: 0 40px;
+        width: 100%;
+        height: 76px;
+    }
 
 
 

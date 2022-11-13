@@ -444,8 +444,8 @@ body{
         border-top-right-radius: 0;
         padding: 16px;
         max-width: 350px;
-        font-size: 20px;
-        line-height: 25px;  
+        font-size: 18px;
+        line-height: 24px;  
         font-weight: 300;
     }
 
@@ -462,6 +462,7 @@ body{
         .chat__message-item{
             background: #ECF4E8;
             border-top-left-radius: 0;
+            border-top-right-radius: 8px;
         }
     }
 }
