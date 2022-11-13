@@ -749,10 +749,10 @@ h2 {
     width: 100%;
     margin-bottom: 44px;
   }
-  .header {
+  .header, .article_mark {
     margin-bottom: 80px;
   }
-  .header:after {
+  .header:after, .header:before, .article_mark:after, .article_mark:before {
     height: 80px;
   }
   .article {
@@ -780,5 +780,37 @@ h2 {
   }
   .article_mark {
     padding: 106px 0;
+  }
+  .article_chat {
+    margin: 0 auto;
+    width: 320px;
+    height: auto;
+    background-position: top center;
+    background-size: contain;
+    padding: 150px 0;
+  }
+  .article_chat-1 {
+    background-image: url(../img/chat_1_min.jpg);
+  }
+  .article_chat-2 {
+    background-image: url(../img/chat_2_min.jpg);
+  }
+  .article_chat-3 {
+    background-image: url(../img/chat_3_min.jpg);
+  }
+  .container_chat {
+    padding: 90px 20px;
+  }
+  .chat__message-item {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .chat__ava img {
+    min-width: 44px;
+    width: 44px;
+    height: 44px;
+  }
+  .chat {
+    padding: 20px;
   }
 }/*# sourceMappingURL=main.css.map */
