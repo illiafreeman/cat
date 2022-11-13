@@ -552,7 +552,7 @@ h2 {
   align-items: flex-start;
   gap: 132px;
   position: relative;
-  padding-top: 90px;
+  padding-top: 0;
 }
 .note__pic {
   width: 68px;
