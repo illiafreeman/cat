@@ -134,13 +134,36 @@
         }
        
     }
-
-
-
-
-
-
-
+    .note {
+        display: block;
+    }
+    .note__quote {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 38px;
+    }
+    .note__name {
+        font-family: "font";
+        font-size: 52px;
+        line-height: 52px;
+        margin-bottom: 16px;
+    }
+    .note__pic{
+        display: none;
+    }
+    .note__sub {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .note__ava {
+        position: static;
+    }
+    .article_green-top::after {
+        top: calc(100% - 80px);
+    }
+    .article_green-top{
+        padding-bottom: 0;
+    }
 
 
 
