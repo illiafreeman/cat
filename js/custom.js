@@ -60,13 +60,15 @@ $(document).ready(function() {
         slidesToShow: 1,
         fade: true,
         autoplay: true,
-        asNavFor: '#slick_2'
+        asNavFor: '#slick_2',
+        swipe: false
     });
     $('#slick_2').slick({
         slidesToShow: 1,
         fade: true,
         autoplay: true,
-        asNavFor: '#slick_1'
+        asNavFor: '#slick_1',
+        swipe: false
     });
 
 
