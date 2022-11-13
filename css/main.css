@@ -4,8 +4,8 @@
 }
 .subtext, .chat__message-item, .chat_cancel, body {
   font-family: "Montserrat", sans-serif;
-  letter-spacing: -1px;
-  font-weight: 400;
+  letter-spacing: 0px;
+  font-weight: 300;
 }
 
 .vote, h1, h2, h3, h4, h5, h6 {
@@ -789,10 +789,9 @@ h2 {
   .article_chat {
     margin: 0 auto;
     width: 320px;
-    height: auto;
     background-position: top center;
     background-size: contain;
-    padding: 150px 0;
+    padding: 120px 0;
   }
   .article_chat-1 {
     background-image: url(../img/chat_1_min.jpg);
@@ -806,9 +805,9 @@ h2 {
   .container_chat {
     padding: 90px 20px 0;
   }
-  .chat__message-item {
-    font-size: 18px;
-    line-height: 21px;
+  .chat__message-item, .chat_cancel {
+    font-size: 16px;
+    line-height: 18px;
   }
   .chat__ava img {
     min-width: 44px;
@@ -816,7 +815,8 @@ h2 {
     height: 44px;
   }
   .chat {
-    padding: 20px;
+    padding: 10px 20px;
+    margin-bottom: 0;
   }
   .container_chat {
     margin-bottom: 160px;
@@ -893,6 +893,18 @@ h2 {
     top: calc(100% - 80px);
   }
   .article_green-top {
-    padding-bottom: 0;
+    padding: 70px 0 0;
+    margin: 0;
+  }
+  .article__text p {
+    width: 100%;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .article__pic_brain {
+    width: 280px;
+  }
+  .article_ready-colbrain {
+    margin-bottom: 0 !important;
   }
 }/*# sourceMappingURL=main.css.map */
