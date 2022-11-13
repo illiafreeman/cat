@@ -2,12 +2,12 @@ $(document).ready(function() {
 
     /*top menu toggle*/
     $('.hambu').click(function(){
-        $('.header-menu').toggleClass('vis');
+        $('.header-menu, .header').toggleClass('vis');
         $('body').toggleClass('oh');
         $('#nav-icon4').toggleClass('open');
     });
     $('.menu').click(function () {
-        $('.header-menu').removeClass('vis');
+        $('.header-menu, .header').removeClass('vis');
         $('body').removeClass('oh');
         $('#nav-icon4').removeClass('open');
     });
@@ -78,7 +78,7 @@ $('.header-nav__link').on('click', function(event) {
         scrollTop: $($anchor.attr('href')).offset().top + 10
     }, 1500, 'easeInOutExpo');
     remove_hash_from_url();
-    $('.header-menu').removeClass('vis');
+    $('.header-menu, .header').removeClass('vis');
     $('body').removeClass('oh');
     $('#nav-icon4').removeClass('open');
     event.preventDefault();

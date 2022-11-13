@@ -1187,4 +1187,10 @@ h2 {
   .header {
     height: auto;
   }
+  .header.vis {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
