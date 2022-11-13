@@ -739,12 +739,11 @@ h2 {
 }
 
 @media only screen and (max-width: 1200px) {
-  .header__container,
-.container,
+  .container,
 .footer__container,
 .article_mark .container,
 .article_brain.article_mark.last .container {
-    width: 400px;
+    width: 360px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -752,17 +751,26 @@ h2 {
     width: 100%;
     margin-bottom: 50px;
   }
-  .header, .article_mark, .footer {
+  .header,
+.article_mark,
+.footer {
     margin-bottom: 80px;
   }
-  .header:after, .header:before, .article_mark:after, .article_mark:before, .footer:after, .footer:before {
+  .header:after, .header:before,
+.article_mark:after,
+.article_mark:before,
+.footer:after,
+.footer:before {
     height: 80px;
   }
-  .article, .article.article_p, .article.last {
+  .article,
+.article.article_p,
+.article.last {
     padding: 70px 0;
     margin-bottom: 80px;
   }
-  h1, h2 {
+  h1,
+h2 {
     font-size: 80px;
     line-height: 80px;
   }
@@ -820,9 +828,10 @@ h2 {
     text-align: center;
   }
   .container_chat {
-    padding: 70px 20px 0;
+    padding: 90px 20px 0;
   }
-  .chat__message-item, .chat_cancel {
+  .chat__message-item,
+.chat_cancel {
     font-size: 16px;
     line-height: 18px;
   }
@@ -1006,7 +1015,8 @@ h2 {
   .container-over .article__pic {
     display: none;
   }
-  .container-over .article_ready-col, .container-over .article__text {
+  .container-over .article_ready-col,
+.container-over .article__text {
     margin: 0;
   }
   .article.article_p {
@@ -1045,7 +1055,9 @@ h2 {
     font-size: 80px;
     line-height: 80px;
   }
-  .last .soc-wrap, .last .article_ready-col.reverse, .last .article__text {
+  .last .soc-wrap,
+.last .article_ready-col.reverse,
+.last .article__text {
     margin-bottom: 0;
   }
   .footer {
@@ -1053,5 +1065,121 @@ h2 {
   }
   .footer__copy {
     text-align: center;
+  }
+  .subtext {
+    font-weight: 300;
+  }
+  .header .container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header-menu nav {
+    display: none;
+  }
+  .header-menu__btn {
+    display: flex;
+  }
+  .header-menu__btn {
+    display: flex;
+    display: flex !important;
+    align-items: center !important;
+    width: 70px !important;
+    height: 70px !important;
+    justify-content: center !important;
+    position: absolute;
+    top: 0;
+    right: -20px;
+  }
+  #nav-icon4 {
+    width: 24px;
+    height: 18px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  #nav-icon4 span:first-child {
+    top: 0;
+    transform-origin: left center;
+  }
+  #nav-icon4 span:nth-child(2) {
+    top: 8px;
+    transform-origin: left center;
+  }
+  #nav-icon4 span:nth-child(3) {
+    top: 16px;
+    transform-origin: left center;
+  }
+  #nav-icon4 span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+  .header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+  }
+  .header-logo {
+    display: flex;
+    width: 78px;
+    max-width: 78px;
+    height: 78px;
+  }
+  #nav-icon4.open span:first-child {
+    transform: rotate(45deg);
+    top: 0;
+    left: 4px;
+  }
+  #nav-icon4.open span:nth-child(2) {
+    width: 0;
+    opacity: 0;
+  }
+  #nav-icon4.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 17px;
+    left: 4px;
+  }
+  .header-menu {
+    padding: 35px 0 12px;
+  }
+  .header-menu.vis {
+    flex-direction: column;
+    padding: 78px 0;
+  }
+  .header-menu.vis nav {
+    display: block;
+  }
+  .header-menu.vis .header-nav {
+    flex-direction: column;
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+    margin-bottom: 48px;
+  }
+  .header-menu.vis .header-nav__link {
+    margin: 0;
+  }
+  .header-menu.vis .header-contact a {
+    margin: 0;
+  }
+  .header-menu.vis .header-contact .df {
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .header-menu.vis .header-contact .header-contact__tel {
+    font-weight: 400;
+  }
+  .header {
+    height: auto;
   }
 }/*# sourceMappingURL=main.css.map */
