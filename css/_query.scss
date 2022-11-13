@@ -325,9 +325,15 @@
         .soc-wrap, .article_ready-col.reverse, .article__text{
             margin-bottom: 0;
         }
+        margin-bottom: 0 !important;
+        padding-bottom: 170px !important;
     }
-
-
+    .footer{
+        margin-bottom: 0;
+    }
+    .footer__copy{
+        text-align: center;
+    }
 
 
 

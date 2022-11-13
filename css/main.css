@@ -1031,6 +1031,10 @@ h2 {
     line-height: 25px;
     font-weight: 400;
   }
+  .last {
+    margin-bottom: 0 !important;
+    padding-bottom: 170px !important;
+  }
   .last .article__pic {
     display: none;
   }
@@ -1043,5 +1047,11 @@ h2 {
   }
   .last .soc-wrap, .last .article_ready-col.reverse, .last .article__text {
     margin-bottom: 0;
+  }
+  .footer {
+    margin-bottom: 0;
+  }
+  .footer__copy {
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
