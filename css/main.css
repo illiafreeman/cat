@@ -581,7 +581,7 @@ h2 {
 }
 .note__ava {
   position: absolute;
-  bottom: -420px;
+  bottom: -316px;
   right: 0;
   width: 600px;
 }
@@ -978,6 +978,7 @@ h2 {
   }
   .note__ava {
     position: static;
+    margin: 50px 0 80px;
   }
   .article_green-top::after {
     top: calc(100% - 80px);
