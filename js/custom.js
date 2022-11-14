@@ -99,7 +99,11 @@ function remove_hash_from_url() {
             document.title, clean_uri);
     }
 }
+$( window ).on( "load", function() {
 
+    new WOW().init();
+
+});
 
 
 

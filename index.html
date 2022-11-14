@@ -21,6 +21,7 @@
 
     <link href="./css/slick.css" rel="stylesheet"/>
     <link href="./css/slick-theme.css" rel="stylesheet"/>
+    <link href="./css/animate.css" rel="stylesheet"/>
     <link href="./css/main.css" rel="stylesheet"/>
 </head>
 <body class="">
@@ -82,7 +83,7 @@
         <article class="article article_chat article_chat-1">
             <div class="chat">
                 <div class="chat__message">
-                    <div class="chat__message-item">
+                    <div data-wow-offset="100" class="chat__message-item wow animate__animated animate__fadeIn">
                         Привет!<br>
                         Ты ж программист, 
                         может сделаешь мне 
@@ -95,9 +96,9 @@
             </div>
             <div class="chat chat_reverse">
                 <div class="chat__message">
-                    <div class="chat__message-item">Друг, здарова!</div>
-                    <div class="chat__message-item">Без проблем Братишка. Через 3 дня все будет.</div>
-                    <div class="chat__message-item">Готово!</div>
+                    <div data-wow-offset="100" data-wow-delay="0.2s" class="chat__message-item wow animate__animated animate__fadeIn">Друг, здарова!</div>
+                    <div data-wow-offset="100" data-wow-delay="0.4s" class="chat__message-item wow animate__animated animate__fadeIn">Без проблем Братишка. Через 3 дня все будет.</div>
+                    <div data-wow-offset="100" data-wow-delay="0.6s" class="chat__message-item wow animate__animated animate__fadeIn">Готово!</div>
                 </div>
                 <div class="chat__ava">
                     <img src="./img/elephant_ava_2.svg" alt="Аватарка слона">
@@ -436,6 +437,7 @@
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script src="./js/slick.js"></script>
 <script src="./js/jquery.easing.min.js"></script>
+<script src="./js/wow.min.js"></script>
 
 <script src="./js/custom.js"></script>
 </body>
