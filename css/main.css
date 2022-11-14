@@ -953,7 +953,7 @@ h2 {
     font-size: 52px;
     line-height: 52px;
     margin-bottom: 16px;
-    padding-left: 30px;
+    padding-left: 50px;
   }
   .note__pic {
     display: none;
@@ -961,7 +961,7 @@ h2 {
   .note__sub {
     font-size: 16px;
     line-height: 20px;
-    padding-left: 30px;
+    padding-left: 50px;
   }
   .note__ava {
     position: static;
