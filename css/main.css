@@ -650,6 +650,19 @@ h2 {
   margin: 0 0 77px;
   width: auto;
 }
+.result__desc .soc {
+  position: relative;
+}
+.result__desc .soc:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 214px;
+  height: 59px;
+  right: -250px;
+  top: 18px;
+  background: url(../img/arrow_2.svg) center center no-repeat;
+}
 .soc {
   width: 138px;
   height: 138px;
@@ -1122,6 +1135,9 @@ h2 {
   }
   .header .container {
     width: 100%;
+  }
+  .result__desc .soc::after {
+    display: none;
   }
 }
 @media only screen and (max-width: 1024px) {

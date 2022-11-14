@@ -664,6 +664,19 @@ h2{
                 margin: 0 0 77px;
                 width: auto;
             }
+            .soc{
+                position: relative;
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 214px;
+                    height: 59px;
+                    right: -250px;
+                    top: 18px;
+                    background: url(../img/arrow_2.svg) center center no-repeat;
+                  };
+            }
 		}
 
 		&__pic {

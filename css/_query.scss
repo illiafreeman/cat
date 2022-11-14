@@ -479,7 +479,9 @@
     .header .container {
         width: 100%;
     }
-
+    .result__desc .soc::after {
+        display: none;
+    }
 
 
 
