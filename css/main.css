@@ -392,7 +392,7 @@ body {
   bottom: 100%;
 }
 .article_green-top {
-  padding-bottom: 420px;
+  padding-bottom: 480px;
   margin-bottom: 0;
 }
 .article_green-top:after {
@@ -583,7 +583,7 @@ h2 {
   position: absolute;
   bottom: -316px;
   right: 0;
-  width: 600px;
+  width: 490px;
 }
 
 .btn {
@@ -754,6 +754,10 @@ h2 {
 
 .slick-prev, .slick-next {
   display: none !important;
+}
+
+.article_ready-col3 {
+  margin-bottom: 210px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1001,6 +1005,7 @@ h2 {
   .article_ready-col3 {
     flex-direction: column;
     margin-top: 70px;
+    margin-bottom: 160px;
   }
   .article_ready-col3 h2 {
     text-align: center;
@@ -1070,7 +1075,7 @@ h2 {
   }
   .dream {
     width: 280px;
-    margin-bottom: -230px;
+    margin-bottom: -190px;
   }
   .container-over {
     position: relative;

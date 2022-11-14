@@ -373,7 +373,7 @@ body{
             bottom: 100%;
         }
         &-top{
-            padding-bottom: 420px;
+            padding-bottom: 480px;
             margin-bottom: 0;
             &:after{
                 background-image: url(../img/bg_white_top.png);
@@ -586,7 +586,7 @@ h2{
         position: absolute;
         bottom: -316px;
         right: 0;
-        width: 600px;
+        width: 490px;
     }
 }
 .btn{
@@ -776,7 +776,9 @@ h2{
 .slick-prev, .slick-next{
     display: none !important;
 }
-
+.article_ready-col3{
+    margin-bottom: 210px;
+}
 
 
 
