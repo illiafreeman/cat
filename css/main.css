@@ -699,6 +699,18 @@ h2 {
   gap: 48px;
 }
 
+.article__pic_brain {
+  width: 450px;
+}
+
+.result-pic {
+  width: 580px;
+}
+
+.comp {
+  width: 470px;
+}
+
 .tel {
   font-size: 34px;
   line-height: 39px;
